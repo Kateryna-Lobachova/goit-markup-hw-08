@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/portfolio.min.css">
+
+</head>
+
+<body>
+    <!--HEADER-->
+    <header class="header">
+        <div class="container header__container">
+            <nav class="navigation">
+                <a class="logo link" href=""><span class="logo__web">Web</span>Studio</a>
+    
+                <ul class="nav-list list">
+                    <li class="nav-list__item"><a class="nav-list__link link" href="index.html">Студия</a></li>
+                    <li class="nav-list__item"><a class="nav-list__link link current" href="">Портфолио</a></li>
+                    <li class="nav-list__item"><a class="nav-list__link link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+    
+            <button class="mobile-btn" type="button" data-menu-open> <svg class="mobile-btn__icon" width="40" height="40">
+                    <use href="./img/sprite/symbol-defs.svg#burger-menu-icon"></use>
+                </svg>
+            </button>
+    
+            <ul class="contact list">
+                <li class="contact-list"><a class="contact-list__link link" href="mailauth-navto:info@devstudio.com">
+                        <svg class="contact-list__icon" width="16" height="12">
+                            <use href="./img/sprite/symbol-defs.svg#envelope"></use>
+                        </svg>info@devstudio.com</a>
+                </li>
+                <li class="contact-list"><a class="contact-list__link link" href="tel:+380961111111">
+                        <svg class="contact-list__icon" width="10" height="16">
+                            <use href="./img/sprite/symbol-defs.svg#phone"></use>
+                        </svg>+38 096 111 11 11</a>
+                </li>
+            </ul>
+        </div>
+    
+        <div class="mobile-menu" data-menu>
+            <div class="mobile-menu__container">
+    
+                <button class="modal-close-btn mobile-close-btn" type="button" data-menu-close>
+                    <svg class="modal-close-btn__icon" width="18" height="18">
+                        <use href="./img/sprite/symbol-defs.svg#mobile-close-icon"></use>
+                    </svg>
+                </button>
+    
+                <ul class="mobile-menu__list list">
+                    <li class="mobile-menu__list-item"><a class="mobile-menu__list-link link" href="">Студия</a></li>
+                    <li class="mobile-menu__list-item"><a class="mobile-menu__list-link link"
+                            href="portfolio.html">Портфолио</a></li>
+                    <li class="mobile-menu__list-item"><a class="mobile-menu__list-link link" href="">Контакты</a></li>
+                </ul>
+    
+                <div>
+                    <ul class="mobile-menu__contact list">
+                        <li class="mobile-menu__contact-list"><a class="mobile-menu__contact-tel link"
+                                href="tel:+380961111111">+38 096 111 11 11</a>
+                        </li>
+                        <li class="mobile-menu__contact-list"><a class="mobile-menu__contact-mail link"
+                                href="mailauth-navto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                    </ul>
+    
+                    <ul class="mobile-menu__social list">
+                        <li class="mobile-menu__social-item"><a class="mobile-menu__social-link link" href="">Instagram</a>
+                        </li>
+                        <li class="mobile-menu__social-item"><a class="mobile-menu__social-link link" href="">Twitter</a>
+                        </li>
+                        <li class="mobile-menu__social-item"><a class="mobile-menu__social-link link" href="">Facebook</a>
+                        </li>
+                        <li class="mobile-menu__social-item"><a class="mobile-menu__social-link link" href="">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+    
+            </div>
+    
+        </div>
+    </header>
+
+    <!--PORTFOLIO-->
+    <main>
+        <section class="portfolio">
+            <div class="port-div container">
+            <h2 hidden>Услуги</h2>
+            <ul class="portfolio-menu list">
+                <li class="portfolio-menu__item"><button class="portfolio-btn" type="button">Все</button></li>
+                <li class="portfolio-menu__item"><button class="portfolio-btn" type="button">Веб-сайты</button></li>
+                <li class="portfolio-menu__item"><button class="portfolio-btn" type="button">Приложения</button></li>
+                <li class="portfolio-menu__item"><button class="portfolio-btn" type="button">Дизайн</button></li>
+                <li class="portfolio-menu__item"><button class="portfolio-btn" type="button">Маркетинг</button></li>
+            </ul>
+            
+
+            
+            <ul class="filter list">
+                <li class="filter__list">
+                     <a class="filter__link link" href="">
+                        <div class="filter__link-overlay">
+                            <picture>
+                                <source srcset="./img/portfolio/img-1.jpg 1x, ./img/portfolio/img-1@2x.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="./img/portfolio/img-tablet1.jpg 1x, ./img/portfolio/img-tablet1@2x.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="./img/portfolio/img-mobile1.jpg x1, ./img/portfolio/img-mobile1@2x.jpg 2x" media="(max-width: 767px)">
+                                
+                                <img class="filter-img" src="./img/portfolio/img-1.jpg" alt="ноутбук">
+                            </picture>
+                              
+                                <p class="overlay">
+                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+                                 Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                               </p>
+                        </div> 
+                        <div class="filter__link-wrapper">
+                            <h3 class="filter-subtitle">Технокряк</h3> 
+                            <p class="filter-descript">Веб-сайт</p> 
+                        </div>
+                    </a> 
+                </li>
+
+                <li class="filter__list">
+                 <a class="filter__link link" href="">
+                    <picture>
+                        <source srcset="./img/portfolio/img-2.jpg 1x, ./img/portfolio/img-2@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./img/portfolio/img-tablet2.jpg 1x, ./img/portfolio/img-table2t2@2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./img/portfolio/img-mobile2.jpg x1, ./img/portfolio/img-mobile2@2x.jpg 2x" media="(max-width: 767px)">
+                        
+                        <img class="filter-img" src="./img/portfolio/img-2.jpg" alt="играют в баскетболл">
+                    </picture>
+                    
+                    <div class="filter__link-wrapper">
+                    <h3 class="filter-subtitle">Постер New Orlean vs Golden Star</h3>
+                    <p class="filter-descript">Дизайн</p>
+                    </div>
+                 </a>
+                </li>
+                <li class="filter__list">
+                 <a class="filter__link link" href="">
+                    <picture>
+                        
+                        <source srcset="./img/portfolio/img-3.jpg 1x, ./img/portfolio/img-3@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./img/portfolio/img-tablet3.jpg 1x, ./img/portfolio/img-tablet3@2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./img/portfolio/img-mobile3.jpg x1, ./img/portfolio/img-mobile3@2x.jpg 2x" media="(max-width: 767px)">
+                        
+                        <img class="filter-img" src="./img/portfolio/img-3.jpg" alt="логотип рыба">
+                    </picture>
+                    
+                    <div class="filter__link-wrapper">
+                    <h3 class="filter-subtitle">Ресторан Seafood</h3>
+                    <p class="filter-descript">Приложение</p>
+                    </div>
+                 </a>
+                </li>
+                <li class="filter__list">
+                 <a class="filter__link link" href="">
+                    <picture>
+                    
+                        <source srcset="./img/portfolio/img-4.jpg 1x, ./img/portfolio/img-4@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./img/portfolio/img-tablet4.jpg 1x, ./img/portfolio/img-tablet4@2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./img/portfolio/img-mobile4.jpg x1, ./img/portfolio/img-mobile4@2x.jpg 2x" media="(max-width: 767px)">
+                    
+                        <img class="filter-img" src="./img/portfolio/img-4.jpg" alt="черные наушники">
+                    </picture>
+                    
+                    <div class="filter__link-wrapper">
+                    <h3 class="filter-subtitle">Проект Prime</h3>
+                    <p class="filter-descript">Маркетинг</p>
+                    </div>
+                 </a>
+                </li>
+                <li class="filter__list">
+                 <a class="filter__link link" href="">
+                    <picture>
+                    
+                        <source srcset="./img/portfolio/img-5.jpg 1x, ./img/portfolio/img-5@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./img/portfolio/img-tablet5.jpg 1x, ./img/portfolio/img-tablet5@2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./img/portfolio/img-mobile5.jpg x1, ./img/portfolio/img-mobile5@2x.jpg 2x" media="(max-width: 767px)">
+                    
+                        <img class="filter-img" src="./img/portfolio/img-5.jpg" alt="две коробки" width="370" height="294">
+                    </picture>
+                    
+                    <div class="filter__link-wrapper">
+                    <h3 class="filter-subtitle">Проект Boxes</h3>
+                    <p class="filter-descript">Приложение</p>
+                    </div>
+                 </a>
+                </li>
+                <li class="filter__list">
+                 <a class="filter__link link" href="">
+                    <picture>
+                    
+                        <source srcset="./img/portfolio/img-6.jpg 1x, ./img/portfolio/img-6@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./img/portfolio/img-tablet6.jpg 1x, ./img/portfolio/img-tablet6@2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./img/portfolio/img-mobile6.jpg x1, ./img/portfolio/img-mobile6@2x.jpg 2x" media="(max-width: 767px)">
+                    
+                        <img class="filter-img" src="./img/portfolio/img-6.jpg" alt="монитор">
+                    </picture>
+                    
+                    <div class="filter__link-wrapper">
+                    <h3 class="filter-subtitle">Inspiration has no Borders</h3>
+                    <p class="filter-descript">Веб-сайт</p>
+                    </div>
+                 </a>
+                </li>
+                <li class="filter__list">
+                 <a class="filter__link link" href="">
+                    <picture>
+                    
+                        <source srcset="./img/portfolio/img-7.jpg 1x, ./img/portfolio/img-7@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./img/portfolio/img-tablet7.jpg 1x, ./img/portfolio/img-tablet7@2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./img/portfolio/img-mobile7.jpg x1, ./img/portfolio/img-mobile7@2x.jpg 2x" media="(max-width: 767px)">
+                    
+                        <img class="filter-img" src="./img/portfolio/img-7.jpg" alt="открытая книга">
+                    </picture>
+                    
+                    <div class="filter__link-wrapper">
+                    <h3 class="filter-subtitle">Издание Limited Edition</h3>
+                    <p class="filter-descript">Дизайн</p>
+                    </div>
+                 </a>
+                </li>
+                <li class="filter__list">
+                 <a class="filter__link link" href="">
+                    <picture>
+                    
+                        <source srcset="./img/portfolio/img-8.jpg 1x, ./img/portfolio/img-8@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./img/portfolio/img-tablet8.jpg 1x, ./img/portfolio/img-tablet8@2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./img/portfolio/img-mobile8.jpg x1, ./img/portfolio/img-mobile8@2x.jpg 2x" media="(max-width: 767px)">
+                    
+                        <img class="filter-img" src="./img/portfolio/img-8.jpg" alt="бирка с логотипом">
+                    </picture>
+                    
+                    <div class="filter__link-wrapper">
+                    <h3 class="filter-subtitle">Проект LAB</h3>
+                    <p class="filter-descript">Маркетинг</p>
+                    </div>
+                 </a>
+                </li>
+                <li class="filter__list">
+                 <a class="filter__link link" href="">
+                    <picture>
+                    
+                        <source srcset="./img/portfolio/img-9.jpg 1x, ./img/portfolio/img-9@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./img/portfolio/img-tablet9.jpg 1x, ./img/portfolio/img-tablet9@2x.jpg 2x"media="(min-width: 768px)">
+                        <source srcset="./img/portfolio/img-mobile9.jpg x1, ./img/portfolio/img-mobile9@2x.jpg 2x"media="(max-width: 767px)">
+                    
+                        <img class="filter-img" src="./img/portfolio/img-9.jpg" alt="руки на клавиатуре ноутбука">
+                    </picture>
+                    
+                    <div class="filter__link-wrapper">
+                    <h3 class="filter-subtitle">Growing Business</h3>
+                    <p class="filter-descript"> Приложение</p>
+                    </div>
+                 </a>
+                </li>
+            </ul>
+            </div>
+
+        </section>
+     
+
+    </main>
+
+<!--FOOTER-->
+<!-- <footer class="footer">
+    <div class="footer-container container">
+        <div class="footer-adress">
+            <a class="logo-footer link" href=""><span class="logo__web">Web</span>Studio</a>
+            <address>
+                <ul class="footer-adress__list list">
+                    <li class="adress-li"><a class="footer-adress__list-map link" href=https://goo.gl/maps/yRMNTz1SN8P2guTi6
+                            target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
+                    <li class="adress-li"><a class="footer-adress__list-contact link"
+                            href=mailto:info@example.com>info@example.com</a></li>
+                    <li class="adress-li"><a class="footer-adress__list-contact link" href=tel:+380991111111>+38 099 111 11
+                            11</a></li>
+                </ul>
+            </address>
+        </div>
+        <div class="footer-soc-div">
+            <p class="footer-soc-div__post" lang="en">Присоединяйтесь</p>
+            <ul class="footer-soc-list list">
+                <li class="footer-soc-list__item"><a class="footer-soc-list__link" href="#">
+                        <svg width="20" height="20" class="footer-soc-list__icon">
+                            <use href="./img/sprite/symbol-defs.svg#instagram"></use>
+                        </svg>
+                    </a></li>
+                <li class="footer-soc-list__item"><a class="footer-soc-list__link" href="#">
+                        <svg width="20" height="20" class="footer-soc-list__icon">
+                            <use href="./img/sprite/symbol-defs.svg#twitter"></use>
+                        </svg>
+                    </a></li>
+                <li class="footer-soc-list__item"><a class="footer-soc-list__link" href="#">
+                        <svg width="20" height="20" class="footer-soc-list__icon">
+                            <use href="./img/sprite/symbol-defs.svg#facebook"></use>
+                        </svg>
+                    </a></li>
+                <li class="footer-soc-list__item"><a class="footer-soc-list__link" href="#">
+                        <svg width="20" height="20" class="footer-soc-list__icon">
+                            <use href="./img/sprite/symbol-defs.svg#linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-form">
+            <p class="footer-soc-div__post">Подпишитесь на рассылку</p>
+            <form class="footer-form__wrapper">
+                <input class="footer-form__wrapper-send" type="email" placeholder="E-mail">
+
+                <button class="footer-form-btn" type="submit">
+                    <span class="footer-form-btn-text">Подписаться</span>
+                    <span>
+                        <svg class="footer-form-icon" widht="24px" hight="24px">
+                            <use href="./img/sprite/symbol-defs.svg#send-icon"></use>
+                        </svg>
+                    </span>
+
+
+                </button>
+
+
+            </form>
+        </div>
+    </div>
+
+
+</footer> -->
+
+</body>
+
+</html>
