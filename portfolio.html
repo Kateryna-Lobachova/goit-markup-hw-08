@@ -28,7 +28,7 @@
     
                 <ul class="nav-list list">
                     <li class="nav-list__item"><a class="nav-list__link link" href="index.html">Студия</a></li>
-                    <li class="nav-list__item"><a class="nav-list__link link current" href="">Портфолио</a></li>
+                    <li class="nav-list__item"><a class="nav-list__link link current" href="portfolio.html">Портфолио</a></li>
                     <li class="nav-list__item"><a class="nav-list__link link" href="">Контакты</a></li>
                 </ul>
             </nav>
@@ -62,7 +62,7 @@
                 </button>
     
                 <ul class="mobile-menu__list list">
-                    <li class="mobile-menu__list-item"><a class="mobile-menu__list-link link" href="">Студия</a></li>
+                    <li class="mobile-menu__list-item"><a class="mobile-menu__list-link link" href="index.html">Студия</a></li>
                     <li class="mobile-menu__list-item"><a class="mobile-menu__list-link link"
                             href="portfolio.html">Портфолио</a></li>
                     <li class="mobile-menu__list-item"><a class="mobile-menu__list-link link" href="">Контакты</a></li>
@@ -138,7 +138,7 @@
                  <a class="filter__link link" href="">
                     <picture>
                         <source srcset="./img/portfolio/img-2.jpg 1x, ./img/portfolio/img-2@2x.jpg 2x" media="(min-width: 1200px)">
-                        <source srcset="./img/portfolio/img-tablet2.jpg 1x, ./img/portfolio/img-table2t2@2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./img/portfolio/img-tablet2.jpg 1x, ./img/portfolio/img-table2@2x.jpg 2x" media="(min-width: 768px)">
                         <source srcset="./img/portfolio/img-mobile2.jpg x1, ./img/portfolio/img-mobile2@2x.jpg 2x" media="(max-width: 767px)">
                         
                         <img class="filter-img" src="./img/portfolio/img-2.jpg" alt="играют в баскетболл">
@@ -192,7 +192,7 @@
                         <source srcset="./img/portfolio/img-tablet5.jpg 1x, ./img/portfolio/img-tablet5@2x.jpg 2x" media="(min-width: 768px)">
                         <source srcset="./img/portfolio/img-mobile5.jpg x1, ./img/portfolio/img-mobile5@2x.jpg 2x" media="(max-width: 767px)">
                     
-                        <img class="filter-img" src="./img/portfolio/img-5.jpg" alt="две коробки" width="370" height="294">
+                        <img class="filter-img" src="./img/portfolio/img-5.jpg" alt="две коробки">
                     </picture>
                     
                     <div class="filter__link-wrapper">
@@ -278,12 +278,12 @@
     </main>
 
 <!--FOOTER-->
-<!-- <footer class="footer">
+<footer class="footer">
     <div class="footer-container container">
-        <div class="footer-adress">
+        <div class="footer-column footer-adress">
             <a class="logo-footer link" href=""><span class="logo__web">Web</span>Studio</a>
             <address>
-                <ul class="footer-adress__list list">
+                <ul class="footer-adress__list list footer-column" >
                     <li class="adress-li"><a class="footer-adress__list-map link" href=https://goo.gl/maps/yRMNTz1SN8P2guTi6
                             target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
                     <li class="adress-li"><a class="footer-adress__list-contact link"
@@ -293,7 +293,7 @@
                 </ul>
             </address>
         </div>
-        <div class="footer-soc-div">
+        <div class="footer-column">
             <p class="footer-soc-div__post" lang="en">Присоединяйтесь</p>
             <ul class="footer-soc-list list">
                 <li class="footer-soc-list__item"><a class="footer-soc-list__link" href="#">
@@ -319,21 +319,22 @@
                 </li>
             </ul>
         </div>
-        <div class="footer-form">
+        <div class="footer-column footer-form">
             <p class="footer-soc-div__post">Подпишитесь на рассылку</p>
-            <form class="footer-form__wrapper">
+            
+            <form class="footer-form__wrapper footer-column">
                 <input class="footer-form__wrapper-send" type="email" placeholder="E-mail">
 
                 <button class="footer-form-btn" type="submit">
                     <span class="footer-form-btn-text">Подписаться</span>
-                    <span>
+                    
                         <svg class="footer-form-icon" widht="24px" hight="24px">
                             <use href="./img/sprite/symbol-defs.svg#send-icon"></use>
                         </svg>
-                    </span>
-
+                   
 
                 </button>
+              
 
 
             </form>
@@ -341,7 +342,10 @@
     </div>
 
 
-</footer> -->
+</footer>
+
+<script src="./js/menu.js"></script>
+
 
 </body>
 

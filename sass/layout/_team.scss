@@ -3,6 +3,12 @@
     background-color: var(--background-light-theme);
 }
 
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
 .team-list__item {
     width:100%;
 
@@ -79,111 +85,19 @@
 
 @media screen and (min-width: 768px){
 
-    .team-list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
-    }
-
     .team-list__item {
         width: 354px;
 
        flex-basis: calc((100% - 30px) / 2);
       }
-    }
+}
 
-    @media screen and (min-width: 1200px){
-        .team-list__item {
-            width: 270px;
-        
-            flex-basis: calc((100% - 90px) / 4);
-        }
+@media screen and (min-width: 1200px){
+    .team-list__item {
+        width: 270px;
+        flex-basis: calc((100% - 90px) / 4);
     }
+}
 
     
 
-
-
-
-// .team-list {
-//     display: flex;
-//     flex-wrap: wrap;
-// }
-
-// .team-wrapper {
-//     padding-top: 30px;
-//     padding-bottom: 30px;
-// }
-
-
-// .team-list__item {
-//     width: 270px;
-
-//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-//         0px 2px 1px rgba(0, 0, 0, 0.2);
-//     border-radius: 0px 0px 4px 4px;
-
-//     background-color: var(--accent-font-color);
-
-//     &:not(:last-child) {
-//         margin-right: 30px;
-//     }
-// }
-
-// .team-wrapper__name {
-//     margin-bottom: 10px;
-
-//     font-weight: 500;
-//     font-size: 16px;
-//     line-height: 19px;
-//     text-align: center;
-//     letter-spacing: 0.03em;
-//     color: var(--title-color);
-// }
-
-// .team-wrapper__post {
-//     margin-bottom: 16px;
-//     font-weight: 400;
-//     font-size: 16px;
-//     line-height: 1.19;
-//     text-align: center;
-//     letter-spacing: 0.03em;
-//     color: var(--text-color);
-// }
-
-// .soc-list {
-//     display: flex;
-//     justify-content: center;
-// }
-
-// .soc-list-link {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-
-//     width: 44px;
-//     height: 44px;
-//     border-radius: 50%;
-//     fill: var(--fill-color);
-//     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-//     &:hover,
-//     &:focus {
-    
-//         background-color: var(--accent-color);
-//     }
-// }
-
-// .soc-list-icon {
-//     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-//     .soc-list-link:hover &,
-//     .soc-list-link:focus & {
-//         fill: var(--accent-font-color);
-//     }
-
-// }
-
-// .soc-list__item:not(:last-child) {
-//     margin-right: 10px;
-// }
