@@ -399,7 +399,6 @@ section {
 
 .portfolio-menu__item:not(:last-child) {
   margin-right: 8px;
-  margin-bottom: 15px;
 }
 
 .portfolio-btn {
@@ -500,6 +499,12 @@ section {
   .portfolio-menu {
     flex-wrap: wrap;
     justify-content: flex-start;
+  }
+  .portfolio-menu__item:nth-child(-n + 3) {
+    margin-bottom: 15px;
+  }
+  .portfolio-menu__item:nth-child(3) {
+    margin-right: 0;
   }
 }
 
@@ -652,7 +657,7 @@ footer {
 @media screen and (max-width: 1199px) {
   .footer-container {
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
   }
   .footer-column {
     display: flex;
@@ -680,9 +685,6 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-  .footer-adress {
-    margin-right: 165px;
-  }
   .footer-form__wrapper-send {
     width: 450px;
   }
@@ -697,7 +699,7 @@ footer {
   .footer-adress {
     margin-right: 70px;
   }
-  .footer-soc-list {
+  .footer-soc {
     margin-right: 93px;
   }
   .footer-form__wrapper {

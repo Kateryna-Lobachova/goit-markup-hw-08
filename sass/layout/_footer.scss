@@ -143,7 +143,7 @@ footer {
 
     .footer-container {
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-around;
     }
 
     .footer-column {
@@ -180,9 +180,6 @@ footer {
 
 @media screen and (min-width: 768px) {
 
-.footer-adress {
-    margin-right: 165px;
-}
 .footer-form__wrapper-send {
     width: 450px;
 }
@@ -201,7 +198,7 @@ footer {
         margin-right: 70px;
     }
 
-    .footer-soc-list {
+    .footer-soc{
         margin-right: 93px;
     }
 
